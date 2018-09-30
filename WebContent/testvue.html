@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="app">
+	  <p>{{ foo }}</p>
+	  <!-- 这里的 `foo` 不会更新！ -->
+	  <button v-on:click="foo = 'baz'">Change it</button>
+	</div>
+</body>
+
+<script>
+	var data={
+			foo:"bat"
+	}
+	new Vue({
+		el:"#app",
+		data:data
+	})
+</script>
+</html>
